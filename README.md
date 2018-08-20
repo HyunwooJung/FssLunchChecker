@@ -1,11 +1,16 @@
-# Add to GCal
+이 확장 프로그램은 구글 계정과 연동하여 점심일정을 빠르게 확인하여 드립니다.
+해당 프로그램은 사용자의 구글 칼렌더에 접속하여 비는 점심 일자를 취합하여 클립보드로 복사해 주는 프로그램입니다.
 
-AddtoGCal is a Chrome extension that lets you add events to your various Google calendars.
-It utilizes Google's quickAdd request format, the Google Chrome Api and JQuery.
+해당 프로그램은 어떠한 개인정보도 동의없이 무단 반출하지 않습니다. 믿고 사용하셔도 됩니다.
 
-Future enhancements:
-Integrating Google calendar reminders in a to-do-list-esque fashion
-Increase user control with event parameters
+해당 프로그램이 점심 있는 일자를 파악하는 조건은 아래와 같습니다.
 
-Chrome Webstore Link: https://chrome.google.com/webstore/detail/lfodkcaadjjbaliojcippghjfibodnil
-Last published 12:30PM 2/19/2017
+1. 평일 오후 12시를 포함한 일정이 있는 경우( 예 : 2018년 8월 17일 12시 ~ 13 일정 )
+2. 평일 중 시간이 선택되지 않고 종일인 일정일 경우( 예 : 2018년 8월 14일 ~ 8월 17일 ) 
+3. 평일 중 여러일이 걸쳐 있을 경우 점심시간(11시 40분 ~ 13시)를 포함하는 경우 ( 예 : 2018년 8월 14일 13시 ~ 2018년 8월 17일 3시 일 경우 15,16,17 일이 점심으로 인식)
+4. 대한민국 휴일일 경우
+5. 반복 일정도 점심으로 인식합니다. 기념일이나 매월 일정 종일 일정도 점심이 있는 것으로 인식하니 주의 부탁드립니다. 대신 제목에 생일이 포함될 경우에는 점심일정에서 제외됩니다.
+
+칼렌더에서 점심만 분리하여 관리하실 경우에는 오류없이 사용이 가능합니다.
+
+Chrome Webstore Link: https://chrome.google.com/webstore/detail/fsslunchchecker/gappipifhdmdgdlafnicmohcclhakdfk?hl=ko
