@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "FSSLunchChecker",
+  "description": "이 확장 프로그램은 구글 계정과 연동하여 점심일정을 빠르게 확인하여 드립니다.",
+  "version": "1.20",
+	
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  "content_scripts" : [{ 
+       "js": [ "jquery.min.js"],
+        "matches": [ "http://*/*", "https://*/*" ],
+        "run_at": "document_idle"
+    }],
+   
+  "content_security_policy": "script-src 'self' https://calendar.google.coms https://ssl.google-analytics.com; object-src 'self'",
+  "permissions": [ "identity", "storage", "tabs", "http://*/*", "https://*/*", "http://calendar.google.com/calendar/*", "https://calendar.google.com/calendar/*" ],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiZ0rB9XQzN4CQ/7On9IjGegWuQnTZCwAPcEOeuSxKxYlGtWO7bj3P83vTPQZ/xqQ8ZFSLPbrcwuzStwc/SxwUjsv3pPYQuzQJh9JQy0eqnKuhmHOo9+4v8s4GKa7HUSm8Gly4noa65p6AuFq4mlRxLZyWStjfN5or/e26E7GG5aMyjZ7E9ZaxEoKQ7CO6d4IBmBwNKqQ1uKGaGRzRpYN/gQCkqauxgKFrRi54jjMa0e6q6DPnog2Fs45yhS+7kU1atNH9XCpKigrWtKjYejPzy+aX49PViuDKHCCtmkeSvd9i2xSnuHlnDkwwHRhXemqvlWAXG6E08Dy+4as1ppEOwIDAQAB",
+  "oauth2": {
+    "client_id": "536716557303-20ejcut0icpmp2sv8hmugqsuh1qp54gp.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar"
+    ]
+  }
+   
+}

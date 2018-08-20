@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>CalendarExtension</title>
+    <script src="jquery.min.js"></script>
+    <style>
+	body {
+	background-color:#3d8ef7;
+	width:250px;
+	color:white;
+	
+	}
+	h1 {
+	display:block;
+	margin: 0 auto;
+	text-align:center
+	}
+	#quick-add-calendar-list, textarea {
+    width: 100%;
+    font-size: 12px;
+    margin: 4px 0;
+	}
+</style>
+  </head>
+  <body>
+    <h1>FSS Lunch Checker</h1>
+    <p id="instruct">빠르게 점심일정을 확인하세요<br>어떠한 개인정보도 수집하지 않습니다.</p>
+    <select id="quick-add-calendar-list"><option>처음 시작 시 여기를 눌러 주세요</option></select><br>
+	<textarea rows="3" id="quick-add-event-title" placeholder="확인을 원하는 달의 숫자를 입력하세요&#13;&#10;9월만 조회할 경우 : 9&#13;&#10;18년 10월에서 19년 2월 조회할 경우 : 10-2"></textarea>
+    <button id="quick-add-button">점심 확인</button>
+    <script src="browser_action.js"></script>
+  </body>
+</html>
+
+
